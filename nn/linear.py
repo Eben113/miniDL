@@ -12,4 +12,4 @@ class Linear(Layer):
         self.parameters.append(self.bias)
 
     def forward(self, x):
-        return x.mm(self.weight) + self.bias.expand(0, len(x.data))
+        return x.mm(self.weight) + self.bias.expand(0, len(x.data))Commit on 2026-02-02T12:00:00
