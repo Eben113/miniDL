@@ -169,4 +169,4 @@ class Tensor(object):
                     self.creators[0].backward(Tensor(new_grad))
                 elif self.creation_op == "cross_entropy":
                     dx = self.softmax - self.target_dist
-                    self.creators[0].backward(Tensor(dx))
+                    self.creators[0].backward(Tensor(dx))Commit on 2026-02-10T12:00:00
