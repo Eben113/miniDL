@@ -170,3 +170,4 @@ class Tensor(object):
                 elif self.creation_op == "cross_entropy":
                     dx = self.softmax - self.target_dist
                     self.creators[0].backward(Tensor(dx))Commit on 2026-02-10T12:00:00
+Commit on 2026-02-16T12:00:00
